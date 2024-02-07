@@ -1,0 +1,44 @@
+.taskCardNavbar {
+  height: 30px;
+  background-color: grey;
+  color: black;
+  padding: 0 1rem;
+  border: 3px solid red;
+}
+
+.taskCardNavbarnav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+}
+
+.icon-button:hover {
+  filter: brightness(1.2);
+}
+
+.icon-button svg {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
