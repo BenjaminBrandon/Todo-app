@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styles from '../stylesheets/TaskCardNavbar.module.scss';
 
-const TaskCardNavbar = props => {
+const TaskCardNavbar = (props: React.JSX.Element) => {
   return (
     <nav className={styles.taskCardNavbar}>
-      <ul className={styles.taskCardNavbarnav}>{props.children}</ul>
+      <ul className={styles.ul}>{props.children}</ul>
     </nav>
   );
 };
