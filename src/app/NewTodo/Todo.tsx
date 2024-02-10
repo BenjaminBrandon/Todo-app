@@ -5,11 +5,6 @@ import React, { useState } from 'react';
 import TaskBoard from './CurrentTaskBoard';
 import '../stylesheets/index.scss';
 import AddTaskModal from './AddTaskModal';
-//temp :
-import TaskCardNavbar from './TaskCardNavbar';
-import TaskCardNavbarItem from './TaskCardNavbarItem';
-import downArrow from './icons/down-arrow-sketch.svg';
-import Image from 'next/image';
 
 //how to pass down setState function
 
@@ -40,18 +35,7 @@ const ToDo = () => {
 
   return (
     <div className="mainBody">
-      <TaskCardNavbar>
-        <TaskCardNavbarItem
-          icon={
-            <Image
-              src={downArrow}
-              alt="im here"
-              style={{ height: '20px', width: '20px' }}
-            />
-          }
-        />
-      </TaskCardNavbar>
-      {/* <div className="navBar">
+      <div className="navBar">
         <button
           onClick={() => {
             currentTaskBoard();
@@ -66,8 +50,13 @@ const ToDo = () => {
         >
           Completed Tasks
         </button>
-        <button onClick={() => setIsModalOpen(true)}>Add Task</button>
-      </div> */}
+        <button
+          className="addBtn"
+          onClick={() => setIsModalOpen(true)}
+        >
+          Add Task
+        </button>
+      </div>
       <AddTaskModal
         addNewTask={addNewTask}
         isOpen={isModalOpen}

@@ -1,13 +1,14 @@
 import React from 'react';
+import styles from '../stylesheets/TaskCardNavbar.module.scss';
 
-const TaskCardNavbarItem = props => {
+const TaskCardNavbarItem = ({ icon }: React.JSX.Element) => {
   return (
-    <li className="nav-item">
+    <li className={styles.iconButton}>
       <a
         href="#"
-        className="icon-button"
+        className={styles.iconButton}
       >
-        {props.icon}
+        {icon}
       </a>
     </li>
   );

@@ -3,21 +3,18 @@
   width: 100%;
   background-color: grey;
   color: black;
-  padding: 0 1rem;
   border: 3px solid red;
   display: flex;
-  justify-content: flex-end;
 }
 
 .ul {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
   border: 3px solid blue;
 }
 
-.nav-item {
+.navItem {
   width: 20px;
   height: 20px;
   border: 5px dashed green;
@@ -26,7 +23,7 @@
   align-items: center;
 }
 
-.icon-button {
+.iconButton {
   width: 20px;
   height: 20px;
   border-radius: 50%;

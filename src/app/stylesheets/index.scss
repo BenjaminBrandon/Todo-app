@@ -69,14 +69,14 @@ body {
       padding-left: 40px;
       display: flex;
       flex-flow: row wrap;
+      gap: 30px;
       justify-content: flex-start;
       overflow: scroll;
 
       .taskCard {
         border: 5px solid pink;
-        margin: 10px;
-        height: 200px;
-        width: 200px;
+        height: 500px;
+        width: 500px;
         display: flex;
         flex-direction: column;
 
