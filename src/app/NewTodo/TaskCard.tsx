@@ -2,8 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import TaskCardNavbar from './TaskCardNavbar';
 import TaskCardNavbarItem from './TaskCardNavbarItem';
-import SvgComponent from './arrowSvg';
+import SvgMenuComponent from './icons/verticalMenuDotSvg';
 import styles from '../stylesheets/TaskCardNavbar.module.scss';
+import NavBarElement from './Navbar/NavBarElement';
 
 const TaskCard = (task: Task) => {
   return (
@@ -14,14 +15,16 @@ const TaskCard = (task: Task) => {
       {/* <TaskCardNavbar>
         <TaskCardNavbarItem icon={<SvgComponent />} />
       </TaskCardNavbar> */}
-      <nav className={styles.taskCardNavbar}>
+      {/* <nav className={styles.taskCardNavbar}>
         <ul>
           <li>
-            <SvgComponent />
+            <SvgMenuComponent />
           </li>
           <li>delete</li>
         </ul>
-      </nav>
+      </nav> */}
+      <NavBarElement />
+
       <div className="taskCardHeader">
         <h3 className="taskTitle">{task.title}</h3>
       </div>
