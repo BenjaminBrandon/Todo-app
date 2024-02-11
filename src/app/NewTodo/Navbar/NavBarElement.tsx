@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './NavBar.module.scss';
 //Maybe make a pinned section
 const NavBarElement = () => {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         <li>
           <a>Edit</a>
