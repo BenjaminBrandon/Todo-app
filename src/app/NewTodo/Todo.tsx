@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import TaskBoard from './CurrentTaskBoard';
 import '../stylesheets/index.scss';
 import AddTaskModal from './AddTaskModal';
+import styles from '../stylesheets/button.module.scss';
 
 //how to pass down setState function
 
@@ -37,6 +38,7 @@ const ToDo = () => {
     <div className="mainBody">
       <div className="navBar">
         <button
+          className={styles.button}
           onClick={() => {
             currentTaskBoard();
           }}
@@ -44,6 +46,7 @@ const ToDo = () => {
           Current Tasks
         </button>
         <button
+          className={styles.button}
           onClick={() => {
             completedTaskBoard();
           }}
@@ -51,7 +54,7 @@ const ToDo = () => {
           Completed Tasks
         </button>
         <button
-          className="addBtn"
+          className={styles.button}
           onClick={() => setIsModalOpen(true)}
         >
           Add Task
