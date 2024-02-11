@@ -1,3 +1,29 @@
 .nav {
   background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navUl {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navLi {
+  height: 50px;
+}
+
+.navA {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.navA:hover {
+  background-color: #f0f0f0;
 }
