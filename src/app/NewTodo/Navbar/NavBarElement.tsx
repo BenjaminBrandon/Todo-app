@@ -12,14 +12,14 @@ const NavBarElement = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => showMenu()}>
+    <div className={styles.header}>
+      <button className={styles.dropDownBtn} onClick={() => showMenu()}>
         <SvgMenuComponent />
       </button>
       {show ? (
         <div className={styles.dropDown}>
-          <a>edit</a>
-          <a>delete</a>
+          <a className={styles.dropDownElement}>edit</a>
+          <a className={styles.dropDownElement}>delete</a>
         </div>
       ) : null}
     </div>

@@ -1,7 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import TaskCardNavbar from './TaskCardNavbar';
-import TaskCardNavbarItem from './TaskCardNavbarItem';
 import SvgMenuComponent from './icons/verticalMenuDotSvg';
 import styles from '../stylesheets/TaskCardNavbar.module.scss';
 import NavBarElement from './Navbar/NavBarElement';

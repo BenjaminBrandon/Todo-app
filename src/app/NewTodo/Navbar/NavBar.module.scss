@@ -1,22 +1,33 @@
-.nav {
+.header {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navUl {
-  width: 100%;
-  list-style: none;
+// .navLi {
+//   height: 50px;
+// }
+.dropDownBtn {
+  border: 3px solid red;
+  color: black;
+  position: absolute;
+}
+
+.dropDown {
+  position: relative;
+  top: 50px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.293);
+  backdrop-filter: blur(10px);
+  border: 5px solid black;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.navLi {
-  height: 50px;
-}
-
-.navA {
+.dropDownElement {
   height: 100%;
+  width: 100px;
   padding: 0 30px;
   text-decoration: none;
   display: flex;
@@ -24,6 +35,6 @@
   color: black;
 }
 
-.navA:hover {
+.dropDownElement:hover {
   background-color: #f0f0f0;
 }
