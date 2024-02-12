@@ -5,7 +5,9 @@ import React, { useState } from 'react';
 import TaskBoard from '../TaskBoard/TaskBoard';
 import '../../stylesheets/index.scss';
 import AddTaskModal from '../AddTaskModal/AddTaskModal';
-import styles from '../../stylesheets/button.module.scss';
+// import styles from '../../stylesheets/button.module.scss';
+import styles from './Todo.module.scss';
+import NavBar from '../NavBar/Navbar';
 
 //how to pass down setState function
 
@@ -36,30 +38,11 @@ const ToDo = () => {
 
   return (
     <div className="mainBody">
-      <div className="navBar">
-        <button
-          className={styles.button}
-          onClick={() => {
-            currentTaskBoard();
-          }}
-        >
-          Current Tasks
-        </button>
-        <button
-          className={styles.button}
-          onClick={() => {
-            completedTaskBoard();
-          }}
-        >
-          Completed Tasks
-        </button>
-        <button
-          className={styles.button}
-          onClick={() => setIsModalOpen(true)}
-        >
-          Add Task
-        </button>
-      </div>
+      <NavBar
+        currentTaskBoard={currentTaskBoard}
+        completedTaskBoard={completedTaskBoard}
+        setIsModalOpen={setIsModalOpen}
+      />
       <AddTaskModal
         addNewTask={addNewTask}
         isOpen={isModalOpen}

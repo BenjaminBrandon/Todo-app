@@ -1,0 +1,15 @@
+.addTaskModal {
+  border: 3px solid gold;
+  position: fixed;
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addTaskForm {
+  border: 3px solid red;
+  display: flex;
+  flex-flow: column wrap;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import SvgMenuComponent from '../icons/verticalMenuDotSvg';
 import styles from '../stylesheets/TaskCardNavbar.module.scss';
-import DropDownMenu from '../Navbar/DropDownMenu';
+import DropDownMenu from '../DropDownMenu/DropDownMenu';
 
 const TaskCard = (task: Task) => {
   return (

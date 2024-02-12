@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './AddTaskModal.module.scss';
 
 const AddTaskModal = ({
   addNewTask,
@@ -35,15 +36,15 @@ const AddTaskModal = ({
   if (!isOpen) return null;
 
   return (
-    <div className="addTaskModal">
+    <div className={styles.addTaskModal}>
       <dialog
-        className="addTaskModal"
+        className={styles.addTaskModal}
         open
       >
         <h1>New Task</h1>
         <form
           method="dialog"
-          className="addTaskForm"
+          className={styles.addTaskForm}
         >
           <input
             type="text"
