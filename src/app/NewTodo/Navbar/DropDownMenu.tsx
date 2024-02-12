@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import styles from './NavBar.module.scss';
+import styles from './DropDownMenu.module.scss';
 import SvgMenuComponent from '../icons/verticalMenuDotSvg';
 
 //Maybe make a pinned section
 
-const NavBarElement = () => {
+const DropDownMenu = () => {
   const [show, setShow] = useState(true);
 
   const showMenu = () => {
@@ -13,7 +13,10 @@ const NavBarElement = () => {
 
   return (
     <div className={styles.header}>
-      <button className={styles.dropDownBtn} onClick={() => showMenu()}>
+      <button
+        className={styles.dropDownBtn}
+        onClick={() => showMenu()}
+      >
         <SvgMenuComponent />
       </button>
       {show ? (
@@ -26,4 +29,4 @@ const NavBarElement = () => {
   );
 };
 
-export default NavBarElement;
+export default DropDownMenu;

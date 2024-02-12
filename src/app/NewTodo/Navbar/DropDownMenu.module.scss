@@ -1,6 +1,11 @@
 .header {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.header:first-child {
+  align-self: flex-end;
 }
 
 // .navLi {
@@ -9,7 +14,7 @@
 .dropDownBtn {
   border: 3px solid red;
   color: black;
-  position: absolute;
+  // position: absolute;
 }
 
 .dropDown {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TaskCard from './TaskCard';
+import TaskCard from '../TaskCard/TaskCard';
 
 const TaskBoard = ({ tasks }: { tasks: Task[] }) => {
   return tasks.map((task: Task) => (

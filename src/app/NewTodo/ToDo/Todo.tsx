@@ -1,11 +1,11 @@
 'use client';
-import sampleTasks from './SampleData/sampletask';
-import sampleCompletedTasks from './SampleData/samplecompletedtask';
+import sampleTasks from '../SampleData/sampletask';
+import sampleCompletedTasks from '../SampleData/samplecompletedtask';
 import React, { useState } from 'react';
-import TaskBoard from './CurrentTaskBoard';
-import '../stylesheets/index.scss';
-import AddTaskModal from './AddTaskModal';
-import styles from '../stylesheets/button.module.scss';
+import TaskBoard from '../TaskBoard/TaskBoard';
+import '../../stylesheets/index.scss';
+import AddTaskModal from '../AddTaskModal/AddTaskModal';
+import styles from '../../stylesheets/button.module.scss';
 
 //how to pass down setState function
 

@@ -72,8 +72,8 @@ body {
         background-color: rgb(224, 224, 44);
         height: 500px;
         width: 500px;
-        // display: flex;
-        // flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
         .taskCardHeader {
           border: 3px dashed orange;
