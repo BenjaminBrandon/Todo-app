@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TaskCard from '../TaskCard/TaskCard';
 
 const TaskBoard = ({ tasks }: { tasks: Task[] }) => {

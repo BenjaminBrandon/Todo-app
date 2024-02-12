@@ -1,3 +1,15 @@
+.navBar {
+  background-color: rgba(0, 0, 0, 0.617);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: black;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+}
+
 .button {
   --glow-color: rgb(217, 176, 255);
   --glow-spread-color: rgba(191, 123, 255, 0.781);

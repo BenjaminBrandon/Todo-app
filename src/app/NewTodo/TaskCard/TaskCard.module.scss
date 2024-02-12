@@ -1,0 +1,17 @@
+.taskCard {
+  color: black;
+  border-radius: 15px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(224, 224, 44);
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskCardHeader {
+  border: 3px dashed orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

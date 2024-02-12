@@ -3,13 +3,9 @@ import sampleTasks from '../SampleData/sampletask';
 import sampleCompletedTasks from '../SampleData/samplecompletedtask';
 import React, { useState } from 'react';
 import TaskBoard from '../TaskBoard/TaskBoard';
-import '../../stylesheets/index.scss';
 import AddTaskModal from '../AddTaskModal/AddTaskModal';
-// import styles from '../../stylesheets/button.module.scss';
 import styles from './Todo.module.scss';
 import NavBar from '../NavBar/Navbar';
-
-//how to pass down setState function
 
 const ToDo = () => {
   const [tasks, setTasks] = useState<Task[]>(sampleTasks);
@@ -38,7 +34,7 @@ const ToDo = () => {
   };
 
   return (
-    <div className="mainBody">
+    <div className={styles.mainBody}>
       <NavBar
         currentTaskBoard={currentTaskBoard}
         completedTaskBoard={completedTaskBoard}
@@ -50,12 +46,11 @@ const ToDo = () => {
         close={closeModal}
       />
 
-      <div className="board">
+      <div className={styles.taskBoard}>
         {showCurrentTask ? (
           <TaskBoard tasks={tasks} />
         ) : (
           <TaskBoard tasks={completedTasks} />
-          // <CompletedTaskBoard completedTasks={completedTasks} />
         )}
       </div>
     </div>

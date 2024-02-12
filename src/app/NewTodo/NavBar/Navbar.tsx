@@ -11,7 +11,7 @@ const NavBar = ({
   openModal(): void;
 }) => {
   return (
-    <div className="navBar">
+    <div className={styles.navBar}>
       <button
         className={styles.button}
         onClick={() => {
