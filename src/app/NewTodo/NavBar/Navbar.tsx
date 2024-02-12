@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './NavBar.module.scss';
 
-const NavBar = ({}) => {
+const NavBar = ({
+  currentTaskBoard,
+  completedTaskBoard,
+  openModal,
+}: {
+  currentTaskBoard(): void;
+  completedTaskBoard(): void;
+  openModal(): void;
+}) => {
   return (
     <div className="navBar">
       <button
@@ -22,7 +30,7 @@ const NavBar = ({}) => {
       </button>
       <button
         className={styles.button}
-        onClick={() => setIsModalOpen(true)}
+        onClick={() => openModal()}
       >
         Add Task
       </button>

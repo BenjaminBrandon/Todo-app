@@ -23,6 +23,7 @@ const ToDo = () => {
   };
 
   const closeModal = () => setIsModalOpen(false);
+  const openModal = () => setIsModalOpen(true);
 
   const handleSetCompletedTask = (completedTask: Task) => {
     setCompletedTasks([...completedTasks, completedTask]);
@@ -41,7 +42,7 @@ const ToDo = () => {
       <NavBar
         currentTaskBoard={currentTaskBoard}
         completedTaskBoard={completedTaskBoard}
-        setIsModalOpen={setIsModalOpen}
+        openModal={openModal}
       />
       <AddTaskModal
         addNewTask={addNewTask}
